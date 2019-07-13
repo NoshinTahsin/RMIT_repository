@@ -16,15 +16,27 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from Pages.views import home_view,upload_view,loginToUpload_view
+from django.conf import settings
+from django.views.static import serve
 
+from Pages.views import home_view,upload_view,loginToUpload_view
+from Product.views import product_detail_view
 urlpatterns = [
 
 	path('', home_view, name='home'),
 	path('upload/', upload_view),
 	path('loginToUpload/', loginToUpload_view),
+    path('productDetail/', product_detail_view),
     path('admin/', admin.site.urls),
     
 
 
 ]
+
+if settings.DEBUG:
+    urlpatterns += [
+    path(r'^media/(?P<path>.*)$', 
+            serve, { 'document_root':
+            settings.MEDIA_ROOT, }),
+
+    ]

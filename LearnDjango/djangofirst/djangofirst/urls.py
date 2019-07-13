@@ -19,6 +19,8 @@ from django.urls import path
 from django.conf import settings
 from django.views.static import serve
 
+from django.conf.urls.static import static
+
 from Pages.views import home_view,upload_view,loginToUpload_view
 from Product.views import product_detail_view
 urlpatterns = [
@@ -31,12 +33,10 @@ urlpatterns = [
     
 
 
-]
+]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
-if settings.DEBUG:
-    urlpatterns += [
-    path(r'^media/(?P<path>.*)$', 
-            serve, { 'document_root':
-            settings.MEDIA_ROOT, }),
-
-    ]
+ 
+#     # static files (images, css, javascript, etc.)
+# urlpatterns = patterns('',
+#     # ... the rest of your URLconf goes here ...
+# ) 

@@ -9,4 +9,5 @@ class Product (models.Model):
 	title = models.TextField()
 	summary = models.TextField(default='this is cool')
 	featured = models.TextField(default='ashlam') 
-	sample_file = models.FileField 
+	sample_file = models.FileField(blank=True, null=True,
+		upload_to="File/%Y/%m/%D/") 

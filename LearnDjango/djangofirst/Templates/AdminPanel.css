@@ -1,0 +1,180 @@
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #001a00;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 6px 6px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: black;
+}
+
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+}
+
+.embed-responsive-item{
+  height: "50px";
+  width:"100px";
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.headjumb {
+  background-color: #1a3300;  
+  color: #ffffff;
+  padding: 100px 25px;
+}
+
+.eventjumb {
+  background-color: #1a3300;  
+  color: #ffffff;
+  padding: 100px 25px;
+}
+ 
+.container-fluid {
+  padding: 60px 50px;
+}
+
+.bg-grey {
+  background-color: #f6f6f6;
+} 
+ 
+.logo-small {
+  color: #284d00;
+  font-size: 50px;
+}
+
+.logo {
+  color: #284d00;
+  font-size: 200px;
+}
+
+@media screen and (max-width: 768px) {
+  .col-sm-4 {
+    text-align: center;
+    margin: 25px 0;
+  }
+}
+
+/* Remove rounded borders from list */
+.list-group-item:first-child {
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.list-group-item:last-child {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.list-group{
+  color: #404040;
+}
+
+
+.thumbnail {
+  padding: 0 0 15px 0;
+  border: none;
+  border-radius: 0;
+}
+
+.thumbnail img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10px;
+}
+
+.thumbnail p {
+  margin-top: 15px;
+  color: #555;
+}
+
+/* Black buttons with extra padding and without rounded borders */
+.btn {
+  padding: 10px 20px;
+  background-color: #1a3300;
+  color: #f1f1f1;
+  border-radius: 0;
+  transition: .2s;
+}
+
+/* On hover, the color of .btn will transition to white with black text */
+.btn:hover, .btn:focus {
+  border: 1px solid #333;
+  background-color: #1a3300;
+  color: #000;
+}
+
+.quote{
+
+}
+
+/* Add a dark gray background color to the modal header and center text */
+.modal-header, .close {
+  background-color: #1a3300;
+  color: #fff !important;
+  text-align: center;
+  font-size: 30px;
+}
+
+.modal-header, .modal-body {
+  padding: 40px 50px;
+}
+
+.carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: #1a3300;
+  }
+  .carousel-indicators li {
+    border-color: #1a3300;
+  }
+  .carousel-indicators li.active {
+    background-color: #1a3300;
+  }
+
+  .carousel-inner img {
+  -webkit-filter: grayscale(90%);
+  filter: grayscale(90%); /* make all photos black and white */
+  width: 100%; /* Set width to 100% */
+  margin: auto;
+  height:100px;
+}
+
+.item img {
+
+    height:100px;
+ 
+}
+
+.item span {
+  font-style: normal;
+}
+ 
+.bg-1 {
+  background: #2d2d30;
+  color: #bdbdbd;
+}
+
+.bg-1 h3 {color: #fff;}
+.bg-1 p {font-style: italic;}

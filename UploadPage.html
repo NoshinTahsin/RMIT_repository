@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="upload.css">
+  <link rel="stylesheet" type="text/css" href="profile.css">
+   <link rel="stylesheet" type="text/css" href="afterSearch.css">
+
+</head>
+<body>
+
+<div class="container mt-3">
+  
+ 
+  <form action="/action_page.php">
+
+    <div class="form-group">
+                      <label for="psw"><span class="glyphicon glyphicon-home"></span>Document Type</label>
+                      <input type="text" class="form-control" id="psw" placeholder="Specify Document Type (PDF/DOC/DOCX/JPG)">
+                    </div>
+
+                     
+                    <div class="form-group">
+                      <label for="usrname"><span class="glyphicon glyphicon-envelope"></span>Keywords</label>
+                      <input type="text" class="form-control" id="usrname" placeholder="Enter keywords here">
+                    </div>
+
+
+    <p> Upload File</p>
+    <div class="custom-file mb-3">
+      <input type="file" class="custom-file-input" id="customFile" name="filename">
+      <label class="custom-file-label" for="customFile">Choose file</label>
+    </div>
+
+    <a href="https://www.wordclouds.com/"><p class="lead"> Generate Word Cloud </p></a>
+
+    <p> Upload Word Art</p>
+    <div class="custom-file mb-3">
+      <input type="file" class="custom-file-input" id="customFile" name="filename">
+      <label class="custom-file-label" for="customFile">Choose file</label>
+    </div>
+    
+    <button type="submit" class="btn btn-block">Upload
+                      <span class="glyphicon glyphicon-ok"></span>
+                    </button>
+
+  </form>
+
+
+</div>
+
+<script>
+// Add the following code if you want the name of the file appear on select
+$(".custom-file-input").on("change", function() {
+  var fileName = $(this).val().split("\\").pop();
+  $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+});
+</script>
+
+</body>
+</html>

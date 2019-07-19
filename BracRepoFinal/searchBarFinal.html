@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
@@ -13,21 +14,21 @@
   <link rel="stylesheet" type="text/css" href="profile.css">
   <link rel="stylesheet" type="text/css" href="searchBar.css">
   <link rel="stylesheet" type="text/css" href="sidenav.css">
-
+ <link rel="stylesheet" type="text/css" href="dropdown.css">
 
 </head>
 <body>
 
  <div class="topnav">
-  <a class="active" href="#home">Logout</a>
-  <a class="active" href="#home">Upload</a>
+  <a class="active" href="WelcomePage.html" target="_blank">Logout</a>
+  <a class="active" href="UploadPage.html" target="_blank">Upload</a>
   
    
   
   <div class="search-container">
     <form action="/action_page.php">
       <input type="text" placeholder="Search.." name="search">
-      <button type="submit"><i class="fa fa-search"></i></button>
+      <button type="submit" href="afterSearchFinal.html" target="_blank"><i class="fa fa-search"></i></button>
     </form>
   </div>
 </div>
@@ -38,31 +39,49 @@
 <div class="main">
 
 
+<div class="sidenav">
 
+  <button class="dropdown-btn">  
+     
+  </button>
+  <button class="dropdown-btn">  
+   
+  </button>
+ 
   
+  <button class="dropdown-btn">Category 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="afterSearchFinal.html" target="_blank">Research Paper and Publications</a>
+    <a href="afterSearchFinal.html" target="_blank">Journals</a>
+    <a href="afterSearchFinal.html" target="_blank">Reports</a>
+  </div>
 
- <div class="sidebar">
 
-   <a href="#home">   </a>
-    <a href="#home">   </a>
-      <a href="#home">   </a>
-    
-  
-   <a href="#home"><i class="fa fa-fw fa-home"></i>  Category</a>
+   <button class="dropdown-btn">Theme 
+    <i class="fa fa-caret-down"></i>
+  </button>
 
-   <a href="#home">  Research Paper and Publications</a>
-  <a href="#services">  Journal</a>
-  <a href="#clients">  Report</a>
+  <div class="dropdown-container">
+    <a href="afterSearchFinal.html" target="_blank">Education</a>
+    <a href="afterSearchFinal.html" target="_blank">Agriculture</a>
+    <a href="afterSearchFinal.html" target="_blank">Health</a>
+     <a href="afterSearchFinal.html" target="_blank">Economics</a>
 
-  <a href="#contact"><i class="fa fa-fw fa-home"></i> Theme</a>
+      <a href="#">Microfinance</a>
 
-   <a href="#home"> Agriculture</a>
-    <a href="#home">  Education</a>
-     <a href="#home"> Health</a>
+       <a href="#">Health</a>
+        <a href="#">Health</a>
+         <a href="#">Health</a>
+          <a href="#">Health</a>
  
 
+
+   
 </div>
 
+</div>
          
        
 
@@ -83,7 +102,7 @@
         
               <div class="col-sm-4">
                 <div class="thumbnail">
-                  <img src="afterSearch.png" alt="AUSTDC">
+                  <img src="aftersearchfinal.png" alt="AUSTDC">
                     <p><strong>After Search get what you want!</strong></p>
                      
                      
@@ -92,7 +111,7 @@
 
               <div class="col-sm-4">
                 <div class="thumbnail">
-                  <img src="view.png" alt="NDFBD">
+                  <img src="viewFinal.png" alt="NDFBD">
                   <p><strong>View others' contribution</strong></p>
                    
                 </div>
@@ -100,7 +119,7 @@
 
               <div class="col-sm-4">
                 <div class="thumbnail">
-                <img src="upload.png" alt="JnUDO">
+                <img src="uploadFinal.png" alt="JnUDO">
                 <p><strong> Upload and enrich this repository!</strong></p>
              
                 
@@ -117,6 +136,25 @@
 
 </div>
  
+
+<script>
+/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.display === "block") {
+  dropdownContent.style.display = "none";
+  } else {
+  dropdownContent.style.display = "block";
+  }
+  });
+}
+</script>
+
 
 </body>
 </html> 

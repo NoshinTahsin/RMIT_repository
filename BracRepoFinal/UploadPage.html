@@ -35,11 +35,41 @@
                     </div>
 
 
+                     <div class="form-group">
+                      <label for="usrname"><span class="glyphicon glyphicon-envelope"></span>Language</label>
+                      <input type="text" class="form-control" id="usrname" placeholder="Enter keywords here">
+                    </div>
+
+
     <p> Upload File</p>
     <div class="custom-file mb-3">
       <input type="file" class="custom-file-input" id="customFile" name="filename">
       <label class="custom-file-label" for="customFile">Choose file</label>
     </div>
+
+     <a class="btn btn-info" href="searchBarFinal.html" target="_blank " role="button">Generate Keyword</a>
+
+     <p> </p>
+     <p></p>
+
+     <p> </p>
+     <p></p>
+
+
+     <p> </p>
+     <p></p>
+
+
+     <p > Download the list of keywords from here and generate word cloud! </p>
+      <a class="btn btn-info" href="searchBarFinal.html" target="_blank " role="button">Download Keyword List</a>
+
+
+     <p> </p>
+     <p></p>
+
+     
+     <p> </p>
+     <p></p>
 
     <a href="https://www.wordclouds.com/"><p class="lead"> Generate Word Cloud </p></a>
 
@@ -49,14 +79,22 @@
       <label class="custom-file-label" for="customFile">Choose file</label>
     </div>
     
-    <button type="submit" class="btn btn-block">Upload
-                      <span class="glyphicon glyphicon-ok"></span>
-                    </button>
+     <a class="btn btn-info" href="searchBarFinal.html" target="_blank " role="button" onclick="myFunction()" >Upload</a>
 
+     
+
+
+          
   </form>
 
 
 </div>
+
+<script>
+function myFunction() {
+  alert("File Uploaded Successfully!");
+}
+</script>
 
 <script>
 // Add the following code if you want the name of the file appear on select

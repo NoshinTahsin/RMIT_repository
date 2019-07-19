@@ -1,0 +1,78 @@
+ body {font-family: "Lato", sans-serif;}
+
+.sidebar {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  float: left;
+  left: 0;
+  background-color: #003300;
+  overflow-x: hidden;
+  padding-top: 16px;
+}
+
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  color: #818181;
+  display: block;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+.categoryTheme{
+  color: white;
+}
+
+.fl{
+  float: left;
+}
+
+.bg1{
+  background-color: #fff;
+ 
+}
+
+.eventjumb {
+  background-color: #fff;  
+  color: #003300;
+  padding: 100px 25px;
+}
+
+.bg-1 {
+  background: #fff;
+  color: #fff;
+}
+
+.bg-1 h3 {color: #003300;}
+.bg-1 p {font-style: italic;}
+
+
+.list-group-item:first-child {
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.list-group-item:last-child {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.list-group{
+  color: #003300;
+}

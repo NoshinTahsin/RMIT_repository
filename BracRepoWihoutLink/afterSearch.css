@@ -1,0 +1,78 @@
+.container {
+  padding: 80px 120px;
+}
+
+#contentimage{
+  height: 400px;
+  width: 400px;
+}
+.eventjumb {
+  background-color: #ffffff;  
+  color: #003300;
+  padding: 100px 25px;
+}
+ 
+.container-fluid {
+  padding: 60px 50px;
+}
+
+.thumbnail {
+  padding: 0 0 15px 0;
+  border: none;
+  border-radius: 0;
+}
+
+.thumbnail img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10px;
+}
+
+.thumbnail p {
+  margin-top: 15px;
+  color: #555;
+}
+
+.left{
+  float: left;
+}
+
+.middle{
+  float: left;
+}
+
+.right{
+  float: left;
+}
+
+
+.bg-1 {
+  background: #2d2d30;
+  color: #bdbdbd;
+}
+
+.bg-1 h3 {color: #fff;}
+.bg-1 p {font-style: italic;}
+
+
+
+.btn {
+  padding: 10px 20px;
+  background-color: #1a3300;
+  color: #f1f1f1;
+  border-radius: 0;
+  transition: .2s;
+}
+
+/* On hover, the color of .btn will transition to white with black text */
+.btn:hover, .btn:focus {
+  border: 1px solid #333;
+  background-color: #1a3300;
+  color: #000;
+}
+
+.call{
+  float:left;
+}
+
+

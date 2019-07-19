@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>SearchBar Repo</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="upload.css">
+  <link rel="stylesheet" type="text/css" href="profile.css">
+  <link rel="stylesheet" type="text/css" href="searchBar.css">
+  <link rel="stylesheet" type="text/css" href="sidenav.css">
+ <link rel="stylesheet" type="text/css" href="dropdown.css">
+
+</head>
+<body>
+
+ <div class="topnav">
+  <a class="active" href="#" target="_blank">Logout</a>  
+  <!-- <a class="active" href="WelcomePage.html" target="_blank">Logout</a> -->
+
+  <a class="active" href="#" target="_blank">Upload</a>
+  <!-- <a class="active" href="UploadPage.html" target="_blank">Upload</a> -->
+  
+   
+  
+  <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit" href="afterSearchFinal.html" target="_blank"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+</div>
+
+
+ 
+
+<div class="main">
+
+
+<div class="sidenav">
+
+  <button class="dropdown-btn">  
+     
+  </button>
+  <button class="dropdown-btn">  
+   
+  </button>
+ 
+  
+  <button class="dropdown-btn">Category 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="#" target="_blank">Research Paper and Publications</a>
+    <a href="#" target="_blank">Journals</a>
+    <a href="#" target="_blank">Reports</a>
+
+     <!-- <a href="afterSearchFinal.html" target="_blank">Research Paper and Publications</a> -->
+    <!-- <a href="afterSearchFinal.html" target="_blank">Journals</a> -->
+    <!-- <a href="afterSearchFinal.html" target="_blank">Reports</a> -->
+  </div>
+
+
+   <button class="dropdown-btn">Theme 
+    <i class="fa fa-caret-down"></i>
+  </button>
+
+  <div class="dropdown-container">
+    <a href="#" target="_blank">Education</a>
+    <a href="#" target="_blank">Agriculture</a>
+    <a href="#" target="_blank">Health</a>
+     <a href="#" target="_blank">Economics</a>
+
+
+ <!-- <a href="afterSearchFinal.html" target="_blank">Education</a> -->
+    <!-- <a href="afterSearchFinal.html" target="_blank">Agriculture</a> -->
+    <!-- <a href="afterSearchFinal.html" target="_blank">Health</a> -->
+     <!-- <a href="afterSearchFinal.html" target="_blank">Economics</a> -->
+<!--  -->
+      <a href="#">Microfinance</a>
+
+       <a href="#">Health</a>
+        <a href="#">Health</a>
+         <a href="#">Health</a>
+          <a href="#">Health</a>
+ 
+
+
+   
+</div>
+
+</div>
+         
+       
+
+ 
+
+   <div class="bg-1">
+
+          <div class=" eventjumb container-fluid" >
+            <h3 class="text-center">Search  -  View Documents - Upload</h3>
+             
+            <ul class="list-group">
+              <li class="list-group-item"><strong>Check what's here!</strong><span class="badge"></span></li>
+              <li class="list-group-item"><strong>Contribute</strong><span class="badge"></span></li>
+              <li class="list-group-item"><strong>Leave an impact!</strong><span class="badge"></span></li>
+            </ul>
+
+            <div class="row text-center">
+        
+              <div class="col-sm-4">
+                <div class="thumbnail">
+                  <img src="aftersearchfinal.png" alt="AUSTDC">
+                    <p><strong>After Search get what you want!</strong></p>
+                     
+                     
+                </div>
+              </div>
+
+              <div class="col-sm-4">
+                <div class="thumbnail">
+                  <img src="viewFinal.png" alt="NDFBD">
+                  <p><strong>View others' contribution</strong></p>
+                   
+                </div>
+              </div>
+
+              <div class="col-sm-4">
+                <div class="thumbnail">
+                <img src="uploadFinal.png" alt="JnUDO">
+                <p><strong> Upload and enrich this repository!</strong></p>
+             
+                
+              </div>
+        
+            </div>
+
+          </div> 
+         
+  
+</div>
+ </div>
+ 
+
+</div>
+ 
+
+<script>
+/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.display === "block") {
+  dropdownContent.style.display = "none";
+  } else {
+  dropdownContent.style.display = "block";
+  }
+  });
+}
+</script>
+
+
+</body>
+</html> 
